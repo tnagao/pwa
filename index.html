@@ -2,11 +2,29 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>PWA</title>
+    <title>ネコだけキャッシュします</title>
   </head>
   <body>
+
     <br />
     <img src="neko.jpg" />
-    <br />
+
+    <br /><br />
+    <img src="inu.jpg" />
+
+    <br /><br />
+    <a href="https://h.accesstrade.net/sp/cc?rk=0100bgqx000005" rel="nofollow" target="_blank">
+    <img src="https://h.accesstrade.net/sp/rr?rk=0100bgqx000005" alt="" border="0" /></a>
+
   </body>
+
+<script>
+
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/service-worker.js')
+             .then(function() { console.log('Service Worker Registered'); });
+  }
+
+</script> 
 </html>
