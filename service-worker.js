@@ -5,9 +5,9 @@ var cacheName = 'cache1';
 
 // キャッシュ対象
 var filesToCache = [
-  '/',
-  '/index.html',
-  '/neko.jpg'
+  '/pwa/',
+  '/pwa/index.html',
+  '/pwa/neko.jpg'
 ];
 
 //--------------------------------------------------------------------

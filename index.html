@@ -7,10 +7,10 @@
   <body>
 
     <br />
-    <img src="neko.jpg" />
+    <img src="/pwa/neko.jpg" />
 
     <br /><br />
-    <img src="inu.jpg" />
+    <img src="/pwa/inu.jpg" />
 
     <br /><br />
     <a href="https://h.accesstrade.net/sp/cc?rk=0100bgqx000005" rel="nofollow" target="_blank">
@@ -22,7 +22,7 @@
 
   if('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('/service-worker.js')
+             .register('/pwa/service-worker.js')
              .then(function() { console.log('Service Worker Registered'); });
   }
 
