@@ -31,19 +31,17 @@ self.addEventListener('install', function(e) {
 //--------------------------------------------------------------------
 self.addEventListener('fetch', function(e) {
 
-  console.log('[ServiceWorker] Fetch', e.request.url);
-
   e.respondWith(
 
     caches.match(e.request).then(function(response) 
     {
       if(response) {
 
-        console.log('[ServiceWorker] Match');
+        console.log('[ServiceWorker] Match', e.request.url);
         return response;
 
       } else {
-        console.log('[ServiceWorker] Not match');
+        console.log('[ServiceWorker] Not match', e.request.url);
         return fetch(e.request);
       }
     })
